@@ -1,0 +1,1 @@
+export const mainBanner :string="/images/main_banner.jpg";
