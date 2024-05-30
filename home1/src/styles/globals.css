@@ -1,32 +1,45 @@
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('/fonts/PretendardVariable.ttf') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
+@import url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff");
 
 :root {
   /* color palette */
   --color-point: #4d7350;
   --color-green0: #e1fce8;
   --color-green1: #3f6043;
-  --color-brown0:#77603E;
+  --color-brown0: #77603e;
+  --color-brown1: #522f26;
+  --color-brown2: #4a3d34;
+  --color-black0: #000000;
+  --color-white: #ffffff;
 
   /* background -color */
-  --main-background: #000000;
+  --main-background: var(--color-white);
+  --green-background: var(--color-point);
+  --footer-background: var(--color-point);
+  --category-background: var(--color-green1);
 
   /* font - color*/
-  --main-font:var(--color-brown0);
+  --main-font: var(--color-brown1);
+  --white-font: var(--color-white);
+  --footer-font: var(--color-white);
+
   /* font - size */
-  --size-main:14px;
-  --size-title:20px;
-  --size-content:16px;
+  --size-main: 14px;
+  --size-title: 20px;
+
+  --size-content: 16px;
   --size-info: 12px;
   /* font - weight */
-  --weight-main:400;
-  --weight-title:600;
-  --weight-main:400;
+  --weight-main: 400;
+  --weight-title: 600;
+  --weight-main: 400;
   /* border style*/
 }
 html,
@@ -136,7 +149,7 @@ section {
 /* Body 폰트 및 기본 스타일 */
 body {
   line-height: 1;
-  font-family: 'Pretendard-Regular', sans-serif;
+  font-family: "Pretendard-Regular", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -162,6 +175,6 @@ ol {
 button {
   border: none;
   background: transparent;
-  padding: 0 ;
+  padding: 0;
   cursor: pointer;
 }

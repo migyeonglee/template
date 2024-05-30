@@ -1,12 +1,11 @@
-import { Container, IconBox, MainLogo, Menu, MenuBox, } from "./styles";
+import { Container, IconBox, MainLogo, Menu, MenuBox } from "./styles";
 import { ShoppingOutlined, UserOutlined } from "@ant-design/icons";
 
 import Image from "next/image";
 import React from "react";
-import { navbarData } from "@components/common/data/navbarData";
+import { navbarData } from "@components/common/data/allData";
 
 export default function Navbar() {
-
   return (
     <Container>
       <MainLogo>
@@ -20,8 +19,8 @@ export default function Navbar() {
         ))}
       </MenuBox>
       <IconBox>
-        {/* <UserOutlined  style={{ cursor:'pointer' }}/>
-        <ShoppingOutlined style={{ cursor:'pointer' }}/> */}
+        {/* <UserOutlined style={{ cursor: "pointer" }} />
+        <ShoppingOutlined style={{ cursor: "pointer" }} /> */}
       </IconBox>
     </Container>
   );

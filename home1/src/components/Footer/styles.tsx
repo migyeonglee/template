@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const Container = styled.footer`
   display: flex;
+  justify-content: center;
   flex-direction: column;
+  height: 100px;
+  text-align: center;
+  background-color: var(--color-point);
 `;
 
-export const ContentInfo = styled.div``;
-
-export const CompanyInfo = styled.div``;
-export const Copyright = styled.p``;
-export const Hr = styled.hr`
-  width: 100%;
-  background: var();
+export const Copyright = styled.p`
+  color: var(--footer-font);
 `;

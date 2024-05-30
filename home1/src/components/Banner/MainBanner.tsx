@@ -1,26 +1,17 @@
-import Image from 'next/image'
-import React from 'react'
-import { mainBanner } from '@components/common/data/banner'
-import styled from 'styled-components'
+import { BannerBox, SubTitle, Title } from "./styles";
+
+import Image from "next/image";
+import React from "react";
+import styled from "styled-components";
 
 export default function MainBanner() {
   return (
     <BannerBox>
-    {/* <Image src={mainBanner} fill alt="Main Logo" /> */}
-
+      <Title>NATURE FRIENDLY FURNITURE</Title>
+      <SubTitle>
+        지속 가능한 소재와 친환경 공정을 통해 자연과 조화를 이루는 가구를
+        만나보세요.
+      </SubTitle>
     </BannerBox>
-
-  )
+  );
 }
-const BannerBox = styled.div`
-background-image: url('/images/main_banner.jpg');
-background-size: cover;
-  background-size: center;
-  width: 100%;
-  min-height: 100vh;
-  opacity: 0.5;
-  color: black;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-`
